@@ -17,10 +17,10 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-
-function fist(arr) {
-  console.log(arr[0])
+function first(arr) {
+  return arr[0];
 }
+
 
 ////////// PROBLEM 2 //////////
 
@@ -34,10 +34,8 @@ var arr = [40,50,60];
 */
 
 function last(arr) {
-console.log(arr[2])
+  return arr[2];
 }
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -50,12 +48,13 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-function looper(family) { 
-for(let i = 0; i < family.length; i++) {
-  console.log(family[i])
+function looper(family) {
+  for(let i = 0; i < family.length; i++) {
+    alert(family[i]);
   }
 }
 
+  
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -68,12 +67,10 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 function reversedLooper(letters) {
-  for(let i = count -1; i >letters; i--) {
-    console.log(family[i])
+  for(let i = letters.length - 1; i >=0; i--) {
+    alert(letters[i]);
   }
 }
-
-
 
 ////////// PROBLEM 5 //////////
 
@@ -86,18 +83,17 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-
-function evenFinder(num) {
-  var ar = [];
-
-  for (var i = 0; i < a.length; i++) {
-    ar.push(a[2 * i + 1]);
+function evenFinder(nums) {
+  let evenNums = [];
+  for(let i = 0; i <= nums.length; i++) {
+    if(nums[i] % 2 === 0) {                    //equation to find even numbers in array
+      evenNums.push(nums[i]);
+    }                
   }
-
-  return ar;
+  return evenNums;
 }
 
-alert(even(arr));
+
 
 
 
