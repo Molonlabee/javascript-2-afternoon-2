@@ -93,16 +93,8 @@ function evenFinder(nums) {
   return evenNums;
 }
 
-
-
-
-
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
-
 
 
 
@@ -119,7 +111,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray) {
+  let evenNums = [];
+  for(let i = 0; i <= numbersArray.length; i++) {
+    if(numbersArray[i] % 2 === 0) {                    
+      evenNums.push(nums[i]);
+      return nums;
+    }   else {
+      oddNums.push(nums2[i]);
+        return nums2;
+    }             
+  }
 
+}
 
 
 ////////// PROBLEM 7 //////////
